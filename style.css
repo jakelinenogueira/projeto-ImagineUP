@@ -1,0 +1,400 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap');
+
+:root {
+    --color-purple: #6667ae;
+    --color-yellow: #ecbf4c;
+    --color-green-water: #15cdc5;
+    --color-pink-light: #e08675;
+    --color-white: #ffffff;
+    --color-blue-light: #8ab4f8;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.row {
+    margin: 0;
+}
+
+b {
+    color: var(--color-purple);
+}
+
+h2{
+    color: var(--color-white);
+    font-weight: 700;
+    font-size: 3em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.background-header{
+    position: relative;
+    height: 300px;
+    background-color: var(--color-yellow);
+    clip-path: polygon(0 0, 100% 0, 100% 24%, 35% 100%, 0 74%);
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    right: 0;
+}
+
+.display-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 40%;
+    margin-top: 20px;
+}
+
+.header-text a {
+    display: flex;
+    align-items: center;
+}
+
+.header-text img {
+    width: 40px;
+    margin-right: 15px;
+}
+
+.header-text p {
+    margin: 0;
+    font-size: 1.5em;
+    font-weight: 700;
+    color: var(--color-purple);   
+}
+
+.creation {
+    background-color:var(--color-green-water);
+    padding: 30px 0;
+    margin-top: -300px;
+    padding-top: 340px;
+}
+
+.creation .text-left{
+    max-width: 440px;
+    padding-left: 80px;
+    font-size: 50px;
+    line-height: 63px;
+}
+
+.creation .text-right{
+    max-width: 390px;
+    font-size: 50px;
+}
+
+.text-center {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    margin: 0;
+    color: var(--color-white);
+    font-size: 2.8em;
+    font-weight: 700;
+    text-align: start;
+}
+
+.video {
+    width: 100%;
+    height: 450px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-purple); 
+}
+
+.video p {
+    color: var(--color-white);
+    font-size: 2.8em;
+    font-weight: 700;
+}
+
+.image-center {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.engagement {
+    padding: 150px 0 50px 0;
+
+}
+.step-by-step {
+    background-color: var(--color-yellow);
+    padding: 60px 0;
+    position: relative;
+}
+
+.step-by-step .detail-background{
+    background-image: url('./assets/vetor-2.svg');
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    right: 0;
+    top: -200px;
+}
+
+.step-by-step h2{
+    margin-bottom: 40px;
+    font-size: 50px;
+}
+
+.display-step-by-step {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-step-by-step {
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.text-step-by-step img {
+    width: 50px;
+    margin-right: 15px;
+}
+
+.text-step-by-step p {
+    margin: 0;
+    width: 50%;
+    font-size: 1.8em;
+    font-weight: 700;
+    color: var(--color-white);
+    line-height: 36px;
+}
+
+.performance {
+    padding: 40px;
+    background-color: var(--color-pink-light);
+    position: relative;
+}
+
+.performance .detail-background{
+    background-image: url('./assets/vetor-3.svg');
+    width: 212px;
+    height: 212px;
+    position: absolute;
+    left: 0;
+    bottom: -140px;
+}
+
+.time {
+    background-color: var(--color-green-water);
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.registration {
+    background-color: var(--color-yellow);
+    padding: 40px 0;
+}
+
+.display-registration {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 70px 0 20px 0;
+}
+
+form input[type="text"], [type="e-mail"], [type="password"] {
+    margin: 5px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+}
+
+form input::placeholder {
+    color: var(--color-purple);
+    font-size: 1.2em;
+}
+
+.terms {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.terms p {
+    margin: 0;
+    color: var(--color-white);
+    font-size: 1em;
+}
+
+.terms input {
+    margin-right: 5px;
+}
+
+button {
+    border: none;
+    border-radius: 4px;
+    padding: 4px 20px;
+    font-size: 25px;
+    font-weight: 700;
+    color: var(--color-white);
+    background-color: var(--color-purple);
+}
+
+footer {
+    background-color: var(--color-yellow);
+    padding: 20px 0;
+    font-size: 17px;
+}
+
+footer p {
+    margin: 0;
+    color: var(--color-purple);
+}
+
+footer img {
+    max-width: 90%;
+}
+
+@media (max-width: 1200px) {
+    .step-by-step .detail-background, .performance .detail-background{
+        display: none;
+    }
+
+    .performance .detail-background{
+        display: none;
+    }
+
+    .creation .text-left {
+        padding-left: 0px;
+    }
+}
+
+@media (max-width: 992px) {
+    .background-header{
+        height: 200px;
+    }
+    .creation .text-left, .creation .text-right, .text {
+        font-size: 42px;
+        line-height: normal;
+        max-width: 100%;
+    }
+    .text-step-by-step p {
+        width: 100%;
+    }
+    .step-by-step h2{
+        font-size: 42px;
+    }
+
+    footer img{
+        width: 210px;
+        margin: 20px auto;
+        display: block;
+    }
+}
+
+@media (max-width: 767px) {
+    .background-header{
+        clip-path: none;
+        height: 160px;
+    }
+
+    .display-header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header-text{
+        margin-top: 10px;
+        font-size: 18px;
+    }
+
+    .creation .text-left, .creation .text-right, .text {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .display-header .logo {
+        width: 300px;
+        margin-bottom: 10px;
+    }
+
+    .header-text img {
+        margin: 0 5px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .header-text p {
+        font-size: 0.9em;
+        font-weight: 700;
+    }
+
+    .text {
+        margin: 20px 0;
+        font-size: 1.8em;
+    }
+
+    .video {
+        height: 250px;
+        float: none;
+    }
+
+    .engagement {
+        padding: 40px 0 0 0;
+    }
+
+    h2 {
+        font-size: 1.8em;
+        margin-bottom: 30px;
+    }
+
+    .text-step-by-step img {
+        width: 25px;
+    }
+
+    .text-step-by-step p {
+        width: 100%;
+        font-size: 20px;
+    }
+
+    form {
+        margin: 0;
+    }
+
+    footer img {
+        width: 70%;
+        max-width: 200px !important;
+    }
+}
+
+
